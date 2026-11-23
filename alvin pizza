@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#090909">
+<title>Alvin Pizza Rajouri | Connect With Us</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #090909;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    top: 5%;
+    background: radial-gradient(circle,
+        rgba(255,75,25,.16), transparent 70%);
+    pointer-events: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 390px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.logo {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    border-radius: 25px;
+    background: #171717;
+    border: 1px solid #333;
+    padding: 8px;
+    box-shadow: 0 0 35px rgba(255,75,25,.2);
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+h1 span {
+    color: #ff542b;
+}
+
+.tagline {
+    color: #aaa;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 7px;
+}
+
+.location {
+    margin: 14px 0 27px;
+    color: #888;
+    font-size: 12px;
+}
+
+.rating {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #191919;
+    border: 1px solid #333;
+    padding: 9px 16px;
+    border-radius: 30px;
+    margin-bottom: 28px;
+    font-size: 12px;
+}
+
+.stars {
+    color: #ffb52e;
+    letter-spacing: 2px;
+}
+
+.section-title {
+    color: #888;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: #151515;
+    border: 1px solid #303030;
+    border-radius: 17px;
+    padding: 17px;
+    transition: .3s;
+    text-align: left;
+}
+
+.link:hover {
+    transform: translateY(-4px);
+    border-color: #ff542b;
+    box-shadow: 0 8px 25px rgba(255,84,43,.15);
+}
+
+.link-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.google .link-icon {
+    background: rgba(66,133,244,.13);
+    color: #4285f4;
+}
+
+.instagram .link-icon {
+    background: rgba(225,48,108,.13);
+    color: #e1306c;
+}
+
+.whatsapp .link-icon {
+    background: rgba(37,211,102,.13);
+    color: #25d366;
+}
+
+.link-content {
+    flex: 1;
+}
+
+.link-content h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.link-content p {
+    color: #888;
+    font-size: 10px;
+    margin-top: 3px;
+}
+
+.arrow {
+    color: #666;
+    font-size: 14px;
+}
+
+.note {
+    color: #888;
+    font-size: 11px;
+    margin-top: 27px;
+    line-height: 1.8;
+}
+
+.note span {
+    color: #ff542b;
+}
+
+footer {
+    margin-top: 35px;
+    color: #555;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 350px) {
+    h1 { font-size: 26px; }
+    .link { padding: 14px; }
+}
+</style>
+</head>
+
+<body>
+
+<main class="container">
+
+    <!-- BRAND LOGO -->
+    <header>
+        <img src="alvin-logo.png"
+             alt="Alvin Pizza Logo"
+             class="logo">
+
+        <h1>ALVIN <span>PIZZA</span></h1>
+
+        <p class="tagline">Taste That Makes You Come Back!</p>
+
+        <p class="location">
+            <i class="fas fa-location-dot"></i>
+            Rajouri, Jammu & Kashmir
+        </p>
+    </header>
+
+    <!-- GOOGLE RATING -->
+    <div class="rating">
+        <span class="stars">★★★★★</span>
+        <strong>4.6/5</strong>
+        <span style="color:#999">Google Rating</span>
+    </div>
+
+    <p class="section-title">Stay Connected With Us</p>
+
+    <section class="links">
+
+        <!-- GOOGLE REVIEWS -->
+        <a class="link google"
+           href="https://search.google.com/local/writereview?placeid=ChIJEV1XoLQvHjkRoE_vjg4Rm-g"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="link-icon">
+                <i class="fab fa-google"></i>
+            </div>
+
+            <div class="link-content">
+                <h3>Rate Us on Google</h3>
+                <p>Enjoyed your food? Share your experience!</p>
+            </div>
+
+            <i class="fas fa-arrow-right arrow"></i>
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a class="link instagram"
+           href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="link-icon">
+                <i class="fab fa-instagram"></i>
+            </div>
+
+            <div class="link-content">
+                <h3>Follow Us on Instagram</h3>
+                <p>Discover our food, offers & latest updates.</p>
+            </div>
+
+            <i class="fas fa-arrow-right arrow"></i>
+        </a>
+
+        <!-- WHATSAPP -->
+        <a class="link whatsapp"
+           href="https://wa.me/917051534787"
+           target="_blank"
+           rel="noopener noreferrer">
+
+            <div class="link-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+
+            <div class="link-content">
+                <h3>Chat With Us on WhatsApp</h3>
+                <p>Have a question? We're just a message away.</p>
+            </div>
+
+            <i class="fas fa-arrow-right arrow"></i>
+        </a>
+
+    </section>
+
+    <p class="note">
+        Loved your experience at <span>Alvin Pizza?</span><br>
+        Your feedback and support mean a lot to us! ❤️
+    </p>
+
+    <footer>
+        © <span id="year"></span> ALVIN PIZZA RAJOURI
+        <br>
+        MADE WITH ❤️ FOR OUR CUSTOMERS
+    </footer>
+
+</main>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
